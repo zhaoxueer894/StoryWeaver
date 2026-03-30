@@ -1,0 +1,33 @@
+name: storyweaver
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.10
+
+  # PyTorch (CPU by default, see note below)
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - pytorch::cpuonly
+
+  # Core Data & Numerical
+  - pandas>=1.5.0
+  - numpy>=1.23.0
+
+  # General Utilities
+  - pip
+  - setuptools
+  - tqdm>=4.65.0
+
+  # Pip Dependencies (HuggingFace Ecosystem)
+  - pip::transformers>=4.30.0
+  - pip::sentence-transformers>=2.2.0
+  - pip::huggingface-hub>=0.16.0
+  - pip::gradio>=3.35.0
+
+# Note: For GPU support, replace 'pytorch::cpuonly' with one of:
+# - pytorch::pytorch::*=cuda11.8* (for CUDA 11.8)
+# - pytorch::pytorch::*=cuda12.1* (for CUDA 12.1)

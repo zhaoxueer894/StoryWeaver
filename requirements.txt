@@ -1,0 +1,20 @@
+# StoryWeaver - AI-Powered Final Fantasy VII Text Adventure
+# COMP5423 Natural Language Processing
+
+# Core Framework
+torch>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+
+# Web UI
+gradio>=3.35.0
+
+# Data Processing
+pandas>=1.5.0
+numpy>=1.23.0
+
+# HuggingFace Ecosystem
+huggingface-hub>=0.16.0
+
+# Utilities
+tqdm>=4.65.0
