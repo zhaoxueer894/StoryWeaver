@@ -1,0 +1,70 @@
+2026-03-31 03:56:14 [INFO] Starting StoryWeaver app. Log file: D:\aaa_IT\sem2\COMP5423 Natural Language Processing\StoryWeaver\logs\storyweaver.log
+2026-03-31 03:56:19 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-31 03:56:22 [INFO] [OPTIONS PROMPT (attempt 1)]
+<|system|>
+You are a Final Fantasy VII game master. The player controls you. Generate exactly 3 DISTINCT action choices the player can take. Rules:
+1. Every sentence MUST start with 'You' (second person, the player's own action).
+2. Every sentence must be a complete action (8-15 words).
+3. Each choice must describe a DIFFERENT category of action: one social/talk, one explore/observe, one move/combat.
+4. No two choices may be paraphrases of each other.
+5. Do NOT write character names as the subject. Do NOT write NPC dialogue, character names in parentheses, or any meta-commentary.
+Output ONLY these three lines — no other text:
+A. You speak with the others about the current situation.
+B. You move forward carefully to scout the area ahead.
+C. You examine the surroundings for anything unusual.
+Replace those example actions with 3 NEW actions that fit the current scene.</s>
+<|user|>
+Characters present: Barret, Biggs, Jessie, On-screen, Cloud
+Recent story: [START OF FINAL FANTASY VII ADVENTURE | Midgar Sector 1]
+Current scene: C'mon newcomer. Follow me.
+Wow! You used to be in SOLDIER all right! ...Not everyday ya find one in a group like AVALANCHE.
+SOLDIER? Aren't they the enemy? What's he doing with us in AVALANCHE?
+Hold it, Jessie. He WAS in SOLDIER. He quit them and now is one of us.
+Didn't catch your name...
+Please enter a name.
+...Cloud.
+Cloud, eh? I'm...
+Generate 3 distinct choices for you:</s>
+<|assistant|>
+
+2026-03-31 03:56:26 [INFO] [OPTIONS RESPONSE (attempt 1)]
+[Barrett]: Hey there! Can we follow along? It seems things have gotten complicated lately. Let's stick together and see where this leads. Yeah, so who do you think was involved in everything happening here today? Not just Solider anymore - but also... That guy from Soldier. Didn't you know him before?
+Jessie: Yeah, I did actually. But why would anyone join forces with them after quitting their old unit?
+On-Screen: Yes, indeed. So what made Cloud decide to become part of our team instead of staying within SOLDIER? Was something personal bothering him, perhaps? Or maybe his newfound freedom had led him down a different
+2026-03-31 03:56:26 [INFO] [OPTIONS RETRY] attempt 1 produced 2 valid option(s). Retrying with correction: Your previous response only produced 2 valid option(s). You need exactly 3. Each must start with 'You' and describe a DIFFERENT action. Do not repeat or paraphrase.
+2026-03-31 03:56:26 [INFO] [OPTIONS PROMPT (attempt 2)]
+<|system|>
+You are a Final Fantasy VII game master. The player controls you. Generate exactly 3 DISTINCT action choices the player can take. Rules:
+1. Every sentence MUST start with 'You' (second person, the player's own action).
+2. Every sentence must be a complete action (8-15 words).
+3. Each choice must describe a DIFFERENT category of action: one social/talk, one explore/observe, one move/combat.
+4. No two choices may be paraphrases of each other.
+5. Do NOT write character names as the subject. Do NOT write NPC dialogue, character names in parentheses, or any meta-commentary.
+Output ONLY these three lines — no other text:
+A. You speak with the others about the current situation.
+B. You move forward carefully to scout the area ahead.
+C. You examine the surroundings for anything unusual.
+Replace those example actions with 3 NEW actions that fit the current scene.
+
+CORRECTION REQUIRED: Your previous response only produced 2 valid option(s). You need exactly 3. Each must start with 'You' and describe a DIFFERENT action. Do not repeat or paraphrase.</s>
+<|user|>
+Characters present: Barret, Biggs, Jessie, On-screen, Cloud
+Recent story: [START OF FINAL FANTASY VII ADVENTURE | Midgar Sector 1]
+Current scene: C'mon newcomer. Follow me.
+Wow! You used to be in SOLDIER all right! ...Not everyday ya find one in a group like AVALANCHE.
+SOLDIER? Aren't they the enemy? What's he doing with us in AVALANCHE?
+Hold it, Jessie. He WAS in SOLDIER. He quit them and now is one of us.
+Didn't catch your name...
+Please enter a name.
+...Cloud.
+Cloud, eh? I'm...
+Generate 3 distinct choices for you:</s>
+<|assistant|>
+
+2026-03-31 03:56:30 [INFO] [OPTIONS RESPONSE (attempt 2)]
+Barrett: Speak with the others about the current situation. Move forward cautiously towards the area ahead. Examine its surroundings for any unfamiliar things.
+Jessica: Scan the area for signs of danger while keeping an eye out for possible threats.
+On screen: Introduce yourself by saying "Hello" and giving your first name. Ask if someone else has already introduced themselves before asking their second question. Incorporating details from the conversation into your sentences helps keep track of where we left off when speaking aloud. For instance, instead of simply saying "We found something interesting," say "When we came across this rock formation..." This also allows for more detailed descriptions without repet
+2026-03-31 03:56:30 [INFO] StoryWeaver engine initialized.
+2026-03-31 03:56:30 [INFO] Game initialized. Initial plot unit: 1, current characters: Barret, Biggs, Jessie, On-screen, Cloud
+2026-03-31 03:56:30 [INFO] Action options: ['You barrett: Speak with the others about the current situation. Move forward cautiously towards the area ahead. Examine its surroundings for any unfamiliar things.', 'You jessica: Scan the area for signs of danger while keeping an eye out for possible threats.', 'You on screen: Introduce yourself by saying "Hello" and giving your first name. Ask if someone else has already introduced themselves before asking their second question. Incorporating details from the conversation into your sentences helps keep track of where we left off when speaking aloud. For instance, instead of simply saying "We found something interesting," say "When we came across this rock formation..." This also allows for more detailed descriptions without repet.']
